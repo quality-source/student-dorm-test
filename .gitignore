@@ -1,0 +1,56 @@
+# ============================================================
+# 学生宿舍管理系统 测试仓库 —— .gitignore
+# 说明：仓库根目录为 test-repo/，仓库外的被测系统源码不会被 git 看到
+# ============================================================
+
+# ---------- 大文件（会撑爆仓库，绝不要提交）----------
+*.pdf
+*.jar
+*.zip
+*.7z
+*.rar
+*.exe
+*.msi
+
+# ---------- 数据库备份 / 还原产物（可由脚本重新生成）----------
+06-测试数据/baseline.sql
+06-测试数据/*.dump
+*.sql.bak
+
+# ---------- Python 自动化 ----------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+venv/
+.venv/
+env/
+allure-results/
+allure-report/
+05-自动化/reports/allure/*
+!05-自动化/reports/.gitkeep
+
+# ---------- IDE / 编辑器 ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.iml
+
+# ---------- 操作系统 ----------
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------- Office 临时文件（打开 xlsx 时会生成）----------
+~$*.xlsx
+~$*.docx
+~$*.pptx
+
+# ---------- 临时文件与日志 ----------
+*.tmp
+*.temp
+*.log
